@@ -1,0 +1,32 @@
+{
+  "name": "order2",
+  "plural": "order2s",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "qty": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "delivered": {
+      "type": "boolean",
+      "default": false
+    },
+    "table": {
+      "type": "string",
+      "required": true
+    },
+    "item": {
+      "type": "menu",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

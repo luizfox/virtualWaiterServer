@@ -1,0 +1,41 @@
+{
+  "name": "order",
+  "plural": "orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "qty": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "delivered": {
+      "type": "boolean",
+      "default": false
+    },
+    "table": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "menu": {
+      "type": "belongsTo",
+      "model": "menu",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "get"
+    }
+  ],
+  "methods": {}
+}

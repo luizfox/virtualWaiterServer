@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "meuMongo": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "virtualwaiter2",
+    "password": "",
+    "name": "meuMongo",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

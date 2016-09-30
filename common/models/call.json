@@ -1,0 +1,23 @@
+{
+  "name": "call",
+  "plural": "calls",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "table": {
+      "type": "string",
+      "required": true
+    },
+    "answered": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

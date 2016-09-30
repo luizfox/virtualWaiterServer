@@ -1,0 +1,37 @@
+{
+  "name": "menu",
+  "plural": "menus",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "item": {
+      "type": "hasMany",
+      "model": "order",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
